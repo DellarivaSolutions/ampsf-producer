@@ -48,129 +48,145 @@
 
 {% block body %}
     <div class="text-black bg-white">
-        {$ producer.countdown(title = "LIMITED TIME OFFER", hoursleft = 9) $}
-        {$ producer.soundcloud(
-            title = "Here Are 15 Previews Of Your 30 Beats!",
-            description = "<i>(All Beats Come Untagged + in Highest Quality After Purchase)</i>",
-            playlistid = "1181144233") $}
-        {$ producer.checkout_button(title = "YES! I WANT THE BEATS", class = "text-white bg-blue-600") $}
+        <p class="{$ $css.section $} border-8 border-red-600 text-3xl text-center">
+            THIS IS AN AMPSalesfunnels PRODUCER SAMPLE FUNNEL<br/>
+            <span class="text-sm italic">Sales funnel works, but will not provide real beats</span>
+        </p>
     </div>
-    
-    <div class="text-black bg-white bg-img-mixpanel">
-        {$ producer.text(
-            title = "For Rappers, Artists, DJs & Creators:",
-            lines = [
-                "Yoo what’s good! My name is John Doe a.k.a. ACME Producer.",
-                "I’m excited for you to download your beats so we can start working together!",
-                "First let me quickly introduce myself."
-            ],
-            image = {
-                "src": "img/introsample.png",
-                "width": 500,
-                "height": 500,
-                "alt": "Sander - flashmob"
-            }) $}
-        {$ producer.text(
-            lines = [
-                "Write some lines to introduce yourself. For example where you live, and about your experience in the Music Industry.",
-                "Do some name-dropping of the big names you have worked with."
-            ]) $}
-        
-        {$ producer.text(
-            title = "Why this beats pack:",
-            lines = [
-                "I know the struggle it takes to get out there as an artist and made it <strong>my mission to help you</strong>.",
-                "This pack contains 30 beats produced by me.",
-                "If I’d sell all those beats for its market value… it would cost $1,500.",
-                "But today, you can get them almost for free.",
-                "You might ask yourself… <strong>Why would you do that?</strong>",
-                "I know everyone has been hit hard because of the corona crisis and I would like to support all the Rappers & Artists out there."
-            ]) $}
-        {$ producer.text(
-            title = "Here’s The Deal:",
-            lines = [
-                "If you promise me not to record sh*t songs on them… I’ll give you my 30 beats for just …$17",
-                "You’ll have the right to use all of the beats commercially (Premium License, normally $50 each).",
-                "And you’ll get a contract, personally signed by me that states you are allowed to do pretty much whatever you want with the beats."
-            ]) $}
+    <div class="text-black bg-white">
+        <div class="{$ $css.section $}">
+            {$ producer.countdown(title = "LIMITED TIME OFFER", hoursleft = 9) $}
+            {$ producer.soundcloud(
+                title = "Here Are 15 Previews Of Your 30 Beats!",
+                description = "<i>(All Beats Come Untagged + in Highest Quality After Purchase)</i>",
+                playlistid = "1181144233") $}
+            {$ producer.checkout_button(title = "YES! I WANT THE BEATS", class = "text-white bg-blue-600") $}
+        </div>
+    </div>
+
+    <div class="text-black bg-white bg-img-mixpanel">    
+        <div class="{$ $css.section $}">
+            {$ producer.text(
+                title = "For Rappers, Artists, DJs & Creators:",
+                lines = [
+                    "Yoo what’s good! My name is John Doe a.k.a. ACME Producer.",
+                    "I’m excited for you to download your beats so we can start working together!",
+                    "First let me quickly introduce myself."
+                ],
+                image = {
+                    "src": "img/introsample.png",
+                    "width": 500,
+                    "height": 500,
+                    "alt": "Sander - flashmob"
+                }) $}
+            {$ producer.text(
+                lines = [
+                    "Write some lines to introduce yourself. For example where you live, and about your experience in the Music Industry.",
+                    "Do some name-dropping of the big names you have worked with."
+                ]) $}
+            
+            {$ producer.text(
+                title = "Why this beats pack:",
+                lines = [
+                    "I know the struggle it takes to get out there as an artist and made it <strong>my mission to help you</strong>.",
+                    "This pack contains 30 beats produced by me.",
+                    "If I’d sell all those beats for its market value… it would cost $1,500.",
+                    "But today, you can get them almost for free.",
+                    "You might ask yourself… <strong>Why would you do that?</strong>",
+                    "I know everyone has been hit hard because of the corona crisis and I would like to support all the Rappers & Artists out there."
+                ]) $}
+            {$ producer.text(
+                title = "Here’s The Deal:",
+                lines = [
+                    "If you promise me not to record sh*t songs on them… I’ll give you my 30 beats for just …$17",
+                    "You’ll have the right to use all of the beats commercially (Premium License, normally $50 each).",
+                    "And you’ll get a contract, personally signed by me that states you are allowed to do pretty much whatever you want with the beats."
+                ]) $}
+        </div>
     </div>
 
     <div class="text-white bg-black">
-        {$ producer.product_placement(
-            title = "The ACME Beats Bundle",
-            image = {
-                "src": "img/acmebeats.png",
-                "width": 500,
-                "height": 500,
-                "alt": "ACME Beats"
-            },
-            from = "VALUE: $1500",
-            for = "YOUR COST: ONLY $17!",
-            unique_selling_points = [
-                "✔ 30 Of My BEST Beats",
-                "✔ MP3 + High Quality WAV",
-                "✔ All beats come with commercial rights",
-                "✔ 100% tag-free"
-            ],
-            message = "NOTE: This special beat sale ends this week or as soon as I’ve exceeded my maximum download bandwidth – Get the beats now before they’re gone!"
-        ) $}  
-        {$ producer.checkout_button(title = "YES! I WANT THE BEATS", class = "text-white bg-blue-600") $}
-    </div>
-
-    <hr class="rounded"/>
-
-    <div class="text-black bg-white bg-img-mixpanel">
-        {$ producer.text(
-            title = "Here’s What To Do Next:",
-            lines = [
-                "To get the beats, all you have to do is to click the blue button.",
-                "You’ll be asked to fill out a short form with your email address so I know where to send you the download link for your beats.",
-                "And you’ll be asked to send over a small fee of $17.",
-                "You can do that using PayPal or debit/credit card."
-            ]) $}
-        {$ producer.text(
-            title = "Here’s What Happens After That:",
-            lines = [
-                "As soon as you’ve ordered your beats, you’ll get an email with your download link for the 30 beat package",
-                "You can immediately download all your beats.",
-                "Honestly, you’ll have more beats that you’ll know what to do with. 😉",
-                "And you’ll receive a commercial license agreement.",
-                "If you feel this is right for you, click on the button below and get instant access to 30 beats with commercial rights",
-                "You won’t regret it, I promise."
-            ]) $}
-        {$ producer.reviews(
-            images = [
-                {
-                    "src": "img/chat1.png",
-                    "width": "408",
-                    "height": "171",
-                    "alt": "Chat experience 1"
+        <div class="{$ $css.section $}">
+            {$ producer.product_placement(
+                title = "The ACME Beats Bundle",
+                image = {
+                    "src": "img/acmebeats.png",
+                    "width": 500,
+                    "height": 500,
+                    "alt": "ACME Beats"
                 },
-                {
-                    "src": "img/chat2.png",
-                    "width": "408",
-                    "height": "348",
-                    "alt": "Chat experience 2"
-                },
-                {
-                    "src": "img/chat3.png",
-                    "width": "408",
-                    "height": "260",
-                    "alt": "Chat experience 3"
-                }
-            ]) $}
-        {$ producer.checkout_button(
-            title = "YES! I WANT THE BEATS",
-            class = "text-white bg-blue-600"
+                from = "VALUE: $1500",
+                for = "YOUR COST: ONLY $17!",
+                unique_selling_points = [
+                    "✔ 30 Of My BEST Beats",
+                    "✔ MP3 + High Quality WAV",
+                    "✔ All beats come with commercial rights",
+                    "✔ 100% tag-free"
+                ],
+                message = "NOTE: This special beat sale ends this week or as soon as I’ve exceeded my maximum download bandwidth – Get the beats now before they’re gone!"
+            ) $}  
+            {$ producer.checkout_button(title = "YES! I WANT THE BEATS", class = "text-white bg-blue-600") $}
+        </div>
+        </div>
+
+        <hr class="rounded"/>
+
+        <div class="text-black bg-white bg-img-mixpanel">
+            <div class="{$ $css.section $}">
+            {$ producer.text(
+                title = "Here’s What To Do Next:",
+                lines = [
+                    "To get the beats, all you have to do is to click the blue button.",
+                    "You’ll be asked to fill out a short form with your email address so I know where to send you the download link for your beats.",
+                    "And you’ll be asked to send over a small fee of $17.",
+                    "You can do that using PayPal or debit/credit card."
+                ]) $}
+            {$ producer.text(
+                title = "Here’s What Happens After That:",
+                lines = [
+                    "As soon as you’ve ordered your beats, you’ll get an email with your download link for the 30 beat package",
+                    "You can immediately download all your beats.",
+                    "Honestly, you’ll have more beats that you’ll know what to do with. 😉",
+                    "And you’ll receive a commercial license agreement.",
+                    "If you feel this is right for you, click on the button below and get instant access to 30 beats with commercial rights",
+                    "You won’t regret it, I promise."
+                ]) $}
+            {$ producer.reviews(
+                images = [
+                    {
+                        "src": "img/chat1.png",
+                        "width": "408",
+                        "height": "171",
+                        "alt": "Chat experience 1"
+                    },
+                    {
+                        "src": "img/chat2.png",
+                        "width": "408",
+                        "height": "348",
+                        "alt": "Chat experience 2"
+                    },
+                    {
+                        "src": "img/chat3.png",
+                        "width": "408",
+                        "height": "260",
+                        "alt": "Chat experience 3"
+                    }
+                ]) $}
+            {$ producer.checkout_button(
+                title = "YES! I WANT THE BEATS",
+                class = "text-white bg-blue-600"
+                ) $}
+        </div>
+        </div>
+
+    <div class="text-black bg-white">
+        <div class="{$ $css.section $} ">
+            {$ producer.checkout_unlimitedrights_trackouts(
+                title = "Beats Order Form",
+                product_base = product_base,
+                product_unlimited = product_unlimited,
+                product_trackouts = product_trackouts
             ) $}
-    </div>
-
-     <div class="text-black bg-white">
-        {$ producer.checkout_unlimitedrights_trackouts(
-            title = "Beats Order Form",
-            product_base = product_base,
-            product_unlimited = product_unlimited,
-            product_trackouts = product_trackouts
-        ) $}
+        </div>
     </div>
 {% endblock %}
