@@ -25,11 +25,11 @@
   },
   "license": "Dellariva Solutions  Commercial Software License",
   "dependencies": {
-    "ampsalesfunnels-functions": "^1.0.0",
+    "ampsalesfunnels-functions": "^1.1.0",
     "nodemailer": "^6.4.14"
   },
   "devDependencies": {
-    "ampsalesfunnels": "^1.0.0"
+    "ampsalesfunnels": "^1.1.0"
   },
   "engines": {
     "node": "12"
